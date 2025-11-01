@@ -49,7 +49,7 @@ const HeroSection = () => {
 
       <div className="illustration">
         <img
-          src="/illustration.png"
+src={process.env.PUBLIC_URL + "/illustration.png"}
           alt="Illustration"
           className="illustration-img"
         />
