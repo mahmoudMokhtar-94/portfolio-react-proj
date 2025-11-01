@@ -1,0 +1,128 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  z-index: 9999;
+}
+
+.navbar-brand {
+   background-image: linear-gradient(to right, #a020f0, #ff007f); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.social-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  color: #fff;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.social-icon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #FFF;
+  transform: scale(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.social-icon:hover::before {
+  transform: scale(1);
+}
+
+.social-icon:hover {
+  color: #000;
+  border-color: #00ffff;
+  background-color: transparent;
+}
+
+.social-icon svg {
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.linkedin-icon:hover {
+    color: #0a66c2;
+    border-color: #0a66c2;
+}
+
+.facebook-icon:hover {
+    color: #1877f2;
+    border-color: #1877f2;
+}
+
+.instagram-icon:hover {
+    color: #833ab4;
+    border-color: #833ab4;
+}
+
+.github-icon:hover {
+    color: #bd2c00;
+    border-color: #bd2c00;
+}
+
+.nav-link {
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff007f !important;
+}
+
+.connect-btn {
+  overflow: hidden;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 4px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+  z-index: 1;
+}
+
+.connect-btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #fff;
+  transition: width 0.4s ease;
+  z-index: 0;
+}
+
+.connect-btn:hover::before {
+    width: 100%;
+}
+
+.connect-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.connect-btn:hover {
+  color: #000;
+  border-color: #fff;
+}

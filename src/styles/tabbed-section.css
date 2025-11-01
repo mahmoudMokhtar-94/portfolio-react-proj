@@ -1,0 +1,134 @@
+.tabbed-section-container {
+    padding: 80px 0;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.tab-group {
+    display: inline-flex;
+    border: 1px solid #333;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.tab-button {
+    padding: 15px 40px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    outline: none;
+    min-width: 150px;
+}
+
+.tab-button.active {
+    background-image: linear-gradient(to right, #4b0082, #6A0DAD);
+    color: white;
+    font-weight: bold;
+}
+
+.tab-button:not(.active):hover {
+    background-color: #1a1a1a;
+}
+
+
+.tab-content-wrapper {
+    padding: 20px 0 60px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contact-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-image: linear-gradient(to right, #6A0DAD, #C71585);
+    border-radius: 20px;
+    text-align: left;
+}
+
+.form-title {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    grid-column: 1 / -1;
+    resize: vertical;
+}
+
+.contact-form button {
+    grid-column: 1 / -1;
+    padding: 15px;
+    background-color: white;
+    color: #4b0082;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: opacity 0.3s;
+}
+
+.contact-form button:hover {
+    opacity: 0.9;
+}
+
+.suggestions-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #1a1a1a; 
+    border-radius: 20px;
+    text-align: left;
+}

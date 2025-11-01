@@ -1,0 +1,104 @@
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 100px 5% 50px;
+  background-color: #0d002a;
+  background-image: url('../../public/hero.png');
+  background-size: cover;
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+.text-content {
+  z-index: 10;
+}
+
+.welcome-tag {
+  background-image: linear-gradient(to right, #4B0082, #6A5ACD, #87CEEB);
+  color: white;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+@media(max-width:758px) {
+  .welcome-tag {
+  display: none;
+}
+
+}
+
+.main-title, .name, .job-title-container {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+.TypeAnimation-cursor {
+  color: #fff !important; 
+  font-weight: 100;
+}
+
+
+.illustration {
+  z-index: 5;
+}
+
+.illustration-img {
+    max-width: 400px;
+    height: auto;
+    animation: float 2s ease-in-out infinite;
+}
+
+.experience-text {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 30px; 
+}
+
+.connect-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.connect-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.arrow-icon {
+  font-size: 1.8rem;
+  margin-left: 5px;
+}
+
+/* Start of Animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px); 
+  }
+  50% {
+    transform: translateY(-20px); 
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* End of Animations */

@@ -1,0 +1,106 @@
+.subscription-section {
+    padding: 80px 0;
+       background: linear-gradient(to right, #1a0f28, #301f40); 
+    color: white;
+    text-align: center;
+}
+
+.subscription-card {
+    position: relative;
+    z-index: 1;
+    max-width: 90%;
+    margin: -160px auto 0;
+    padding: 50px 30px;
+    background-color: white;
+    border-radius: 40px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+}
+
+.subscription-text {
+    max-width: 400px;
+    text-align: left;
+    color: #333;
+}
+
+.subscription-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.subscription-form {
+    display: flex;
+    align-items: center;
+    max-width: 500px; 
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.email-input {
+    flex: 1;
+    padding: 14px 20px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #333;
+    background-color: transparent;
+}
+
+.email-input::placeholder {
+    color: #aaa;
+}
+
+.submit-sub-btn {
+    padding: 14px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-image: linear-gradient(to right, #450487, #7B1FA2); 
+    transition: opacity 0.3s;
+    height: 100%;
+}
+
+.submit-sub-btn:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 850px) {
+    .subscription-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    
+    .subscription-text {
+        text-align: center;
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+    
+    .subscription-form {
+        flex-direction: column;
+        width: 100%;
+        max-width: 450px;
+        border: none;
+    }
+
+    .email-input {
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .submit-sub-btn {
+        width: 100%;
+        border-radius: 12px;
+        padding: 12px;
+    }
+}
