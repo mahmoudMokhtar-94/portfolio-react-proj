@@ -17,6 +17,7 @@
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://mahmoudMokhtar-94.github.io/project-05-react",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
