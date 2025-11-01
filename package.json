@@ -17,7 +17,7 @@
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://mahmoudMokhtar-94.github.io/project-05-react",
+  "homepage": "https://mahmoudMokhtar-94.github.io/react-project",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
